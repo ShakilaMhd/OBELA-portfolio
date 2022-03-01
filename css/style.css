@@ -37,4 +37,22 @@ nav .container  .detail-nav-end {
 }
 
 /* --------------------main--------------- */
+main {
+    margin-top: 50px;
+}
+main .about .content-1 {
+    text-align: center;
+}
 
+main .about .content-2 {
+    display: flex;
+    gap: 200px;
+    margin-top: 30px;
+}
+
+
+main .about .content-2 .content-ul {
+    display: flex;
+    gap: 100px;
+    margin-top: 20px;
+}
