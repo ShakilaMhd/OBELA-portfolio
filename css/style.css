@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul  li {
+    list-style-type: none;
+}
+
+body {
+
+}
+
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/* ----------------header----------- */
+nav .container .navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .container .navbar .nav-right ul{
+    display: flex;
+}
+
+nav .container .content {
+    text-align: center;
+}
+
+nav .container  .detail-nav-end {
+    text-align: right;
+}
+
+/* --------------------main--------------- */
+
