@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+body {
+}
+
+img {
+  width: 100%;
+}
+
+* section {
+  margin-top: 50px;
+  border-bottom: 2px solid blue;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/* ----------------header----------- */
+nav .container .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .container .navbar .nav-right ul {
+  display: flex;
+}
+
+nav .container .content {
+  text-align: center;
+}
+
+nav .container .detail-nav-end {
+  text-align: right;
+}
+
+/* --------------------main--------------- */
+main {
+  margin-top: 50px;
+}
+main .about .content-1 {
+  text-align: center;
+}
+
+main .about .content-2 {
+  display: flex;
+  margin-top: 30px;
+}
+
+main .about .content-2 .cont-left {
+  flex: 1;
+}
+
+main .about .content-2 .cont-right {
+  flex: 2;
+}
+
+main .about .content-2 .content-ul {
+  display: flex;
+  gap: 100px;
+  margin-top: 20px;
+}
+
+main .skill .content-1 {
+  text-align: center;
+}
+
+main .skill .content-2 .cards {
+  display: flex;
+  text-align: center;
+}
+
+main .skill .content-2 .cards .card {
+  flex: 1;
+}
+
+main .service {
+  text-align: center;
+}
+
+main .service .content-2 .cards {
+  display: flex;
+}
+
+main .service .content-2 .cards .card {
+  flex: 1;
+}
+
+main .service .content-3 {
+  text-align: center;
+}
+main .service .content-3 .bars {
+  display: flex;
+  flex: 1;
+  /* justify-content: space-between; */
+}
+
+main .service .content-3 .bars .bar {
+  flex: 1;
+}
+
+main .portfolio .content-1 {
+  text-align: center;
+}
+
+main .portfolio .content-2 .row-pic {
+  display: flex;
+  gap: 30px;
+}
+
+main .portfolio .content-2 .row-pic .column {
+  flex: 30%;
+  text-align: center;
+  border: 10px solid rgb(30, 6, 85);
+}
+
+main .portfolio .content-3 {
+  text-align: center;
+}
+
+main .team {
+  text-align: center;
+}
+
+main .team .content-2 .cards {
+  display: flex;
+}
+
+main .team .content-2 .cards .card {
+  flex: 1;
+}
+
+main .blog {
+  text-align: center;
+}
+
+main .blog .content-2 .cards {
+  display: flex;
+}
+
+main .blog .content-2 .cards .card {
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* ---------------Footer-------------- */
+footer .content {
+  text-align: center;
+}
