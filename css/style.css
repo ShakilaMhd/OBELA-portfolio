@@ -27,6 +27,11 @@ img {
 
 
 /* ----------------header----------- */
+header {
+  height: 100vh;
+  background: url(../);
+}
+
 nav .container .navbar {
   display: flex;
   justify-content: space-between;
