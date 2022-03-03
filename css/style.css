@@ -9,6 +9,7 @@ ul li {
 }
 
 body {
+  font-family: roboto-light;
 }
 
 img {
@@ -24,11 +25,13 @@ img {
   margin: 0 auto;
 }
 
+
 /* ----------------header----------- */
 nav .container .navbar {
   display: flex;
   justify-content: space-between;
 }
+
 
 nav .container .navbar .nav-right ul {
   display: flex;
