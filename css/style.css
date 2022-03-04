@@ -38,6 +38,10 @@ h2 {
 strong {
   color: rgb(49, 48, 48);
 }
+
+a {
+  text-decoration: none;
+}
 /* ----------------header---------------------------------------------------------- */
 header {
   height: 100vh;
@@ -146,7 +150,11 @@ main .about .content-1 > h2 {
 }
 
 main .about .content-1 .pic img,
-main .skill .content-1 .pic img {
+main .skill .content-1 .pic img,
+main .service .content-1 .pic img,
+main .portfolio .content-1 .pic img,
+main .team .content-1 .pic img,
+main .blog .content-1 .pic img {
   width: 60px;
   text-align: center;
   margin: 5px 0 25px 0;
@@ -213,6 +221,8 @@ main .skill {
       rgba(126, 84, 253, 0.85)
     ),
     url(../images/skill-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
 }
 main .skill .content-1 {
@@ -281,74 +291,264 @@ main .skill .content-2 .card span {
 }
 main .service {
   text-align: center;
+  height: 135vh;
 }
 
+main .service .content-1 {
+  padding: 80px 0 50px 0;
+}
+
+main .service .content-1 > h2 {
+  font-family: roboto-regular;
+  font-size: 30px;
+  font-weight: bold;
+}
+main .service .content-1 > p {
+  font-size: 14px;
+  color: #7a7a7a;
+}
 main .service .content-2 .cards {
   display: flex;
+  height: 340px;
+  justify-content: space-between;
 }
 
 main .service .content-2 .cards .card {
-  flex: 1;
+  width: 360px;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
+main .service .content-2 .cards .pic {
+  padding: 25px 0 10px 0;
+}
+main .service .content-2 .cards .card img {
+  width: 70px;
+}
+main .service .content-2 h3 {
+  font-family: roboto-bold;
+  color: #273f59;
+  font-size: 17px;
+}
+main .service .content-2 p {
+  font-size: 12px;
+  line-height: 2;
+  margin-top: 10px;
+  color: #7b7a7a;
+}
 main .service .content-3 {
   text-align: center;
+  height: 280px;
+  background: linear-gradient(
+      0deg,
+      rgba(126, 84, 253, 0.9),
+      rgba(126, 84, 253, 0.9)
+    ),
+    url(../images/overview-background.png);
+  background-repeat: no-repeat;
+  padding: 100px 0;
 }
+
 main .service .content-3 .bars {
   display: flex;
   flex: 1;
-  /* justify-content: space-between; */
+  color: #fff;
+  text-align: center;
+  justify-content: space-between;
 }
 
 main .service .content-3 .bars .bar {
-  flex: 1;
+  display: flex;
+  font-size: 36px;
+  font-family: roboto-bold;
 }
 
+main .service .content-3 .bars .icon {
+  font-size: 50px;
+  padding: 5px 8px 0 0;
+}
+main .service .content-3 .bars p {
+  color: #fff;
+  font-size: 16px;
+  margin-left: 10px;
+  font-family: roboto-light;
+}
+main .service .content-3 .bars span {
+  display: block;
+  margin-right: 20px;
+}
+
+main .portfolio {
+  height: 255vh;
+}
 main .portfolio .content-1 {
   text-align: center;
+  padding: 80px 0 50px 0;
 }
 
+main .portfolio .content-1 > h2 {
+  font-family: roboto-regular;
+  font-size: 30px;
+  font-weight: bold;
+}
 main .portfolio .content-2 .row-pic {
   display: flex;
-  gap: 30px;
+  gap: 25px;
 }
 
 main .portfolio .content-2 .row-pic .column {
   flex: 30%;
   text-align: center;
-  border: 10px solid rgb(30, 6, 85);
 }
-
+main .portfolio .content-2 #second-portfolio-img {
+  padding-top: 20px;
+}
 main .portfolio .content-3 {
+  height: 70vh;
+  background: linear-gradient(
+      0deg,
+      rgba(126, 84, 253, 0.9),
+      rgba(126, 84, 253, 0.9)
+    ),
+    url(../images/slider-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
+  margin-top: 100px;
+  color: #fff;
+}
+main .portfolio .content-3 .pic {
+  width: 10%;
+  margin: 0 auto;
+  padding-top: 70px;
 }
 
+main .portfolio .content-3 h5 {
+  font-size: 20px;
+}
+
+main .portfolio .content-3 p {
+  margin-top: 30px;
+  color: #d1cece;
+  font-family: roboto-light;
+  font-weight: 100;
+}
+main .portfolio .content-3 #star {
+  margin-top: 30px;
+}
 main .team {
   text-align: center;
+  height: 100vh;
+}
+
+main .team .content-1 {
+  text-align: center;
+  padding: 80px 0 50px 0;
+}
+
+main .team .content-1 h2 {
+  font-family: roboto-regular;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 main .team .content-2 .cards {
   display: flex;
+  gap: 30px;
 }
 
 main .team .content-2 .cards .card {
   flex: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+main .team .content-2 .cards img {
+  border-radius: 10px;
+}
+
+main .team .content-2 .cards .detail {
+  text-align: left;
+  padding: 10px 0 20px 20px;
+  font-weight: bold;
 }
 
 main .blog {
   text-align: center;
+  height: 120vh;
 }
 
+main .blog .content-1 {
+  text-align: center;
+  padding: 80px 0 50px 0;
+}
+main .blog .content-1 h2 {
+  font-family: roboto-regular;
+  font-size: 30px;
+  font-weight: bold;
+}
 main .blog .content-2 .cards {
   display: flex;
+  gap: 30px;
 }
 
 main .blog .content-2 .cards .card {
   flex: 1;
-  margin-right: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
+main .blog .content-2 .pic img {
+  border-radius: 10px;
+}
+
+main .blog .content-2 .card .detail {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 14px;
+  margin: 20px 0 20px 0;
+}
+
+main .blog .content-2 .card h2 {
+  font-size: 16px;
+  font-family: roboto-bold;
+  color: #273f59;
+  margin-bottom: 20px;
+}
+
+main .blog .content-2 .card p {
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #757575;
+}
 /* ---------------Footer-------------- */
 footer .content {
   text-align: center;
+  height: 40vh;
+  background: #28343a;
+}
+
+footer .content .line-bottom {
+  border-bottom: 2px solid #374850;
+}
+footer .container h1 {
+  font-size: 30px;
+  padding-top: 70px;
+}
+
+footer .container .detail {
+  margin: 30px 0 50px 0;
+}
+
+footer .container .detail a {
+  color: #afafaf;
+  font-weight: 600;
+  font-size: 12px;
+  padding-left: 60px;
+}
+
+footer .container .detail i {
+  padding-right: 10px;
 }
